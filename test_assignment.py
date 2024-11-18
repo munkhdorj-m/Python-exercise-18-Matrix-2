@@ -17,9 +17,9 @@ def test1(matrix, expected):
     assert check_contains_loop(rotate_matrix_90_clockwise)
 
 @pytest.mark.parametrize("matrix, target, expected", [
-    ([[3, 8, 2], [5, 10, 7], [6, 1, 9]], 10, (1, 1)),
-    ([[4, 0, 1], [9, 2, 3], [5, 6, 7]], 6, (2, 1)),
-    ([[3, 5], [7, 1]], 8, "Not found")
+    ([[3, 8, 2], [5, 10, 7], [6, 1, 9]], 10, [1, 1]),
+    ([[4, 0, 1], [9, 2, 3], [5, 6, 7]], 6, [2, 1]),
+    ([[3, 5], [7, 1]], 8, [])
 ])
 def test2(matrix, target, expected):
     assert search_in_matrix(matrix, target) == expected
