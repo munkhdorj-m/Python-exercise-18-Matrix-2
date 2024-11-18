@@ -42,7 +42,7 @@ Rotate a square matrix 90 degrees clockwise.
 
 **Problem:**
 
-Search for a given target element in the matrix and returns its position.
+Search for a given target element in the matrix and returns its position. (If there's multiple occurances, return first one)
 
 **Example**
 
